@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+
+<body>
+    <canvas onclick="moverect(event);" id="mycanvas" height="200px" width="400px">
+    </canvas>
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#449900";
+        ctx.fillRect(0, 0, 5, 5);
+
+        function moverect (event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            ctx.moveTo(x,y);
+            ctx.fillRect(0, 0, 5, 5);
+            document.getElementsByClassName("souhrn").innerHTML = x;
+
+
+        }
+    </script>

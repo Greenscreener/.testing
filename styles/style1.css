@@ -1,0 +1,460 @@
+html, body {
+    font-family: Open Sans;
+    text-align: left;
+}
+
+div {}
+
+.button1 {
+    font-size: 20px;
+    padding: 15px;
+    background-color: green;
+    transition-duration: 0.2s;
+    border: none;
+    box-shadow: 0px 3px 0px #000000;
+    position: relative;
+    color: #ffffff;
+    font-family: "Open Sans";
+    border-radius: 2px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border: solid;
+    border-color: green;
+}
+
+.button1:hover {
+    background-color: forestgreen;
+    cursor: pointer;
+}
+
+.button1:active {
+    margin-top: 3px;
+    margin-left: 0px;
+    box-shadow: 0 0 0;
+}
+
+div#endora {
+    top: 100%;
+    position: absolute;
+}
+
+.button2 {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #f44336;
+    transition-duration: 0.2s;
+    border: none;
+    color: #ffffff;
+    font-family: "Open Sans";
+    border-radius: 2px;
+    border: solid;
+    border-color: #f44336;
+    text-align: center;
+}
+
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button2 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button2:hover span {
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@keyframes move {
+    0% {
+        opacity: 1;
+        padding: 16px;
+    }
+    100% {
+        opacity: 0;
+        padding: 100px;
+    }
+}
+
+.button3 {
+    border: none;
+    height: 252px;
+    width: 236px;
+    background-image: url(./drawing.png);
+    transition-duration: 0.2s;
+}
+
+.button3:hover {
+    background-image: url(./drawing1.png);
+}
+
+.Button4 {
+    display: inline-block;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url(./ubuntu.png);
+    box-shadow: 0px 0px 0px;
+    transition: 0.4s ease-in-out;
+}
+
+.Button4:hover {
+    -webkit-filter: opacity(70%);
+}
+
+.Button4:active {
+    -webkit-filter: opacity(0%);
+    transform: scale(5);
+}
+
+.Button5 {
+    font-size: 20px;
+    padding: 15px;
+    background-color: blue;
+    transition-duration: 0.2s;
+    border: none;
+    position: relative;
+    color: #ffffff;
+    font-family: "Open Sans";
+    border-radius: 2px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin: 0 auto;
+}
+
+.Button5:hover {
+    background-color: navy;
+    cursor: pointer;
+}
+
+div#Button5menu {
+    display: none;
+    background-color: blue;
+    color: white;
+    width: 10em;
+    transition-duration: 0.2s;
+}
+
+div#Button5menu p {
+    padding: 15px 17px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    cursor: pointer;
+    width: 10em;
+    transition-duration: 0.4s;
+}
+
+div#Button5menu p:hover {
+    background-color: navy;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    background-color: white;
+    border: solid 10px lightgrey;
+    border-radius: 50%;
+    border-left: solid 10px green;
+    height: 40px;
+    width: 40px;
+    animation: loader 0.5s linear infinite;
+}
+
+.container {
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: #555555;
+    height: 5px;
+    width: 40px;
+    display: block;
+    margin-top: 5px;
+    transition-duration: 0.4s;
+    z-index: 2;
+}
+
+.change .bar2 {
+    transform: translate( 40px, 10px);
+}
+
+.change .bar1 {
+    transform: translate( 80px, 20px);
+}
+
+.menucontents1 {
+    background-color: grey;
+    color: white;
+    display: block;
+    padding: 10px 0px;
+    position: relative;
+    top: 0px;
+    z-index: -2;
+    width: 120px;
+    text-align: center;
+    height: 1.5em;
+    border-bottom: solid 2px lightgrey;
+    opacity: 0;
+}
+
+div.menucontents1:hover {
+    background-color: #555555;
+}
+
+@keyframes menu1 {
+    0% {
+        height: 0px;
+        padding: 0px;
+        margin: 0px;
+        opacity: 0;
+    }
+    50% {
+        height: 0px;
+        padding: 0px;
+        margin: 0px;
+        opacity: 1;
+    }
+    100% {
+        height: 1.5em;
+        opacity: 1;
+    }
+}
+
+.change .menucontents1 {
+    opacity: 1;
+    animation: menu1 0.8s;
+}
+
+.mail0, .mail1 {
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 10%;
+    font-weight: bold;
+    border: none;
+    float: left;
+    position: relative;
+    left: 15em;
+}
+
+.mail0 {
+    background-color: #ffbbbb;
+    color: red;
+}
+
+.mail1 {
+    background-color: #bbffbb;
+    color: green;
+}
+
+#formdiv {
+    z-index: 2;
+    box-shadow: 2px 2px 4px black;
+    background-color: white;
+    width: 60%;
+    position: fixed;
+    top: 0px;
+    left: 20%;
+    height: 10em;
+    display: none;
+    padding: 5px 0 100px;
+}
+
+#formdiv.change {
+    display: block;
+    animation: formdiv 1s ease-in-out;
+}
+
+#formdivshadow {
+    opacity: 0.5;
+    background-color: black;
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#formdivshadow.change {
+    display: block;
+}
+
+@keyframes formdiv {
+    0% {
+        top: -20em;
+    }
+    100% {
+        height: oem;
+    }
+}
+
+.greenback {
+    color: white;
+    background-color: green;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.attention {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    position: fixed;
+    top: 80%;
+    width: 6em;
+    text-align: center;
+    left: calc(50% - 3em);
+    display: none;
+    opacity: 0.5;
+}
+
+@keyframes attention {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes unattention {
+    100% {
+        opacity: 0;
+        display: block
+    }
+    0% {
+        opacity: 0.5;
+        display: block
+    }
+}
+
+.attention.change {
+    display: block;
+    animation: attention 0.5s ease-in-out;
+}
+
+.attention.unchange {
+    animation: unattention 0.5s ease-in-out;
+}
+
+#output {
+    width: calc(100% - 30px);
+    height: 90%;
+    border: outset 15px #999999;
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+}
+
+#inputtext {
+    border: none;
+}
+
+#userprefix {
+    float: left;
+}
+
+.jsos {
+    font-family: "Ubuntu Mono";
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+#input {
+    border: outset 15px #999999;
+    padding: 0.5em;
+    border-top: none;
+}
+
+#outputtext {
+    position: absolute;
+    bottom: 0;
+    left: 0.5em;
+}
+
+#versionnumber, #version {
+    float: left;
+}
+
+#parlax1 {
+    height: calc(50% - 10px);
+    width: calc(50% - 10px);
+    border: solid 5px black;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    background-image: url(http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_st_no%C2%AE-orange-hex.jpg);
+    background-size: 25%;
+    background-attachment: fixed;
+}
+
+#parlax2 {
+    height: calc(50% - 10px);
+    width: calc(50% - 10px);
+    border: solid 5px black;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-image: url(http://images.apple.com/osx/images/og.jpg?201606301611);
+    background-size: 25%;
+    background-attachment: fixed;
+}
+
+#parlax3 {
+    height: calc(50% - 10px);
+    width: calc(50% - 10px);
+    border: solid 5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url(https://monovm.com/images/unzip-centos.png);
+    background-size: 25%;
+    background-attachment: fixed;
+}
+
+#parlax4 {
+    height: calc(50% - 10px);
+    width: calc(50% - 10px);
+    border: solid 5px black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url(http://4.bp.blogspot.com/-GcKg-EPF1jc/U3czt3UCIUI/AAAAAAAAByE/304eAM3Ik_0/s1600/windows-installer-does-not-work.png);
+    background-size: 25%;
+    background-attachment: fixed;
+}
+
+div#endora.long {
+    top: 200%;
+    position: absolute;
+}
+#mycanvas {
+    background-color: #ddd;
+    border: 1px solid #000;
+
+}
