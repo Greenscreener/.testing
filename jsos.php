@@ -238,6 +238,7 @@
         </div>
         <div id="version">Version:&nbsp;</div><div id="versionnumber"></div> <br><br>
   It is based on the terminal of Ubuntu and made entirely in JavaScript.<br><b>PLESE NOTE: </b>JSAUCE is in an early development stage and is meant mostly for fun. <br> To start please select your username. Warning: A lot of special characters may cause strange things.<br>
+  I've moved his to a new domain! To view the latest version go <a href="//jsauce.greenscreener.tk"> HERE </a>.
         </div></div>
     <form id="input" class="jsos" onSubmit="formsubmit(); return false;">
         <div id="userprefix" class="jsos"></div>
