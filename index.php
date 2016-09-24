@@ -25,7 +25,7 @@
               ?>
 
               <h4>Have a nice day</h4>
-              <a href="//github.com/Greenscreener/.jsauce"> <img src="github.png" style="text-decoration: none; box-shadow: 0px 0px 5px black" height="50px"> </a>
+              <a href="//github.com/Greenscreener/.testing"> <img src="github.png" style="text-decoration: none; box-shadow: 0px 0px 5px black" height="50px"> </a>
 
               <div id="endora"><endora></div>
                </body>
