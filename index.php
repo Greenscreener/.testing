@@ -6,9 +6,8 @@
          </head>
          <body>
 
-              <h3>Hello! Welcome to texting.greenscreener.tk!</h3>
+              <h3>Hello! Welcome to texting.greenscreener.tk!&nbsp;&nbsp;&nbsp;&nbsp;</h3>
               This page is made for testing various css/php/js features. Mostly for our later use.
-              Source code: <a href="//github.com/Greenscreener/.testing"><img src="github.png"></a>
               These are all the pages that are contained within this subdomain:<br />
 
               <?php
@@ -26,6 +25,7 @@
               ?>
 
               <h4>Have a nice day</h4>
+              <a href="//github.com/Greenscreener/.jsauce"> <img src="github.png" style="text-decoration: none; box-shadow: 0px 0px 5px black" height="50px"> </a>
 
               <div id="endora"><endora></div>
                </body>
