@@ -7,6 +7,8 @@
          function menu(x) {
          x.classList.toggle("change");
          }
+         var i;
+         var interval;
          </script>
          </head>
          <body>
@@ -37,3 +39,22 @@
             class="path"
             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8.1;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:0.30000001;" />
         </svg>
+        <div style="height: 20px;">
+
+        </div>
+        <div class="slider">
+            <div class="sliderblue" id="sliderblue"></div>
+            <div class="slidercircle"></div>
+        </div>
+        <script type="text/javascript">
+            function loading () {
+                    i = document.getElementById('sliderblue').offsetWidth;
+                    i+=10;
+                    document.getElementById('sliderblue').style = "width: " + i + "px;";
+
+            }
+        </script>
+        <div style="height: 20px;">
+
+        </div>
+        <button class="button2" onclick="clearInterval(interval); document.getElementById('sliderblue').style = 'width: ' + 1 + 'px;';interval = setInterval(loading,100);"><span>Load it</span></button>

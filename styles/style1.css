@@ -466,3 +466,92 @@ div#endora.long {
 @keyframes dash {
     to {stroke-dashoffset: 0;}
 }
+.slider {
+    background-color: lightgrey;
+    width: 40em;
+    height: 1em;
+    border-radius: 0.5em;
+    display: flex;
+}
+.sliderblue {
+    background-color: #03a9f4;
+    width: 1em;
+    height: 1em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+
+}
+.slidercircle {
+    height: 1em;
+    width: 1em;
+    background-color: #03a9f4;
+    border: solid 0.5em white;
+    border-radius: 50%;
+    position: relative;
+    top: -0.5em;
+    left: -0.5em;
+    box-shadow: 0px 0px 3px black;
+}
+.roundbutton {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: calc(50% - 4em);
+    top: calc(50% - 4em);
+    background-color: #ff5722;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 10px black;
+    transition-duration: 0.4s;
+    border: 0 solid #e64a19;
+}
+@keyframes rbh {
+    0%: {
+        width: 8em;
+        height: 8em;
+        left: calc(50% - 4em);
+        top: calc(50% - 4em);
+    }
+    100%: {
+        width: 10em;
+        height: 10em;
+        left: calc(50% - 5em);
+        top: calc(50% - 5em);
+    }
+}
+.roundbutton:hover {
+    border: 1em solid #e64a19;
+    width: 10em;
+    height: 10em;
+    left: calc(50% - 5em);
+    top: calc(50% - 5em);
+    animation: rbh 0.4s;
+    cursor: pointer;
+    box-shadow: 0 0 0 1em #ff5722,
+                0 0 10px 1em black;
+}
+@keyframes rbc {
+    0% {
+        width: 10em;
+        height: 10em;
+        left: calc(50% - 5em);
+        top: calc(50% - 5em);
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -50%;
+    }
+}
+.roundbutton.click {
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    animation: rbc 1s;
+}
+.buttonbody {
+    overflow: hidden;
+
+}
