@@ -22,11 +22,23 @@ function Ball(x,y,r,red,green,blue) {
             this.vel.y++;
             this.pos.x += this.vel.x;
             this.pos.y += this.vel.y;
+
             if (this.pos.y > windowHeight && this.vel.y > 0) {
-                this.vel.y = (this.vel.y - 2) * -1;
+                this.vel.y = (this.vel.y) * -1;
                 this.vel.x += (this.vel.x * 1.5) + random(-2,2);
                 //console.log("boink");
             }
+
+            this.vel.y = this.vel.y * 0.99;
+            this.vel.x = this.vel.x * 0.99;
         }
+    }
+
+    this.jamesmove = function () {
+        this.pos.x += this.vel.x;
+        this.pos.y += this.vel.y;
+        this.vel.x = (this.pos.x - mouseX) / -7;
+        this.vel.y = (this.pos.y - mouseY) / -7;
+        line(this.pos.x,this.pos.y,mouseX,mouseY);
     }
 }

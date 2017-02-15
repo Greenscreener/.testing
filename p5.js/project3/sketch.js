@@ -1,7 +1,7 @@
 
 var james;
 var fallingBalls = [];
-
+var cursorEaten = true;
 function setup() {
     createCanvas(windowWidth,windowHeight);
     james = new Ball();
@@ -9,13 +9,18 @@ function setup() {
 
 
 function draw() {
-    background(255);
-    james.pos.x = mouseX;
-    james.pos.y = mouseY;
-    james.draw();
-    for (var i = 0; i < fallingBalls.length; i++) {
-        fallingBalls[i].draw();
-        fallingBalls[i].move();
+    background(50);
+    if (cursorEaten == true) {
+        james.pos.x = mouseX;
+        james.pos.y = mouseY;
+        james.draw();
+        for (var i = 0; i < fallingBalls.length; i++) {
+            fallingBalls[i].draw();
+            fallingBalls[i].move();
+        }
+    } else {
+        james.jamesmove();
+        james.draw();
     }
 }
 
