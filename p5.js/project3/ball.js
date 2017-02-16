@@ -11,8 +11,12 @@ function Ball(x,y,r,red,green,blue) {
 
 
     this.draw = function () {
-        fill(this.color);
-        ellipse(this.pos.x,this.pos.y,this.r/2,this.r/2);
+        if (this.pos.x < -100 || this.pos.x > (windowWidth + 100) || this.pos.y < -100 || this.pos.y > (windowHeight + 100)) {
+
+        } else {
+            fill(this.color);
+            ellipse(this.pos.x,this.pos.y,this.r/2,this.r/2);
+        }
     }
 
     this.move = function () {
