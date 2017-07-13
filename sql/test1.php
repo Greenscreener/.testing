@@ -1,5 +1,5 @@
 <?php
-
+/*
 
 $servername = "localhost";
 $username = "ajmen";
@@ -12,7 +12,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
-
 $sql = "INSERT INTO test1 (ID, HLASKA, LIKY, DATUM, PROFESOR) values (0, 'To je tvůj boj bobánku', 0, '2002-02-02', 'Pan zuzovy')";
 
 if ($conn->query($sql) === TRUE) {
@@ -22,5 +21,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-
+*/
 ?>

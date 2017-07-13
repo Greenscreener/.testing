@@ -1,0 +1,70 @@
+body {
+    font-family: "Open Sans";
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+div#topbar {
+    width: calc(100% - 0.5em);
+    height: 1.5em;
+    background-color: #444;
+    color: #fff;
+    padding: 0.25em;
+}
+div#navigation {
+    height: calc(100% - 17em);
+    width: 15em;
+    background-color: #444;
+    color:white;
+    padding-top: 1px;
+    overflow-y: auto;
+
+}
+div#avatar {
+    height: 15em;
+    width: 15em;
+    background-color: grey;
+    position: relative;
+    background-image: url(https://lh6.ggpht.com/0L0HtqGMFyPQFsyvBPzPK0qAzWQjR_8RvHUhPmqRUVaEC5WhOTh25xulinEE9KG3ugU=w300);
+    background-size: 100%;
+}
+div#avatarcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-color: #333;
+    opacity: 0.7;
+    padding: 1em;
+    color: white;
+    font-weight:normal;
+    font-size: 10px;
+}
+div#avatarcaption > span {
+    font-size: 16px;
+    font-weight: bold;
+}
+div#navigation > ul > li {
+    list-style-type: none;
+    padding: 1em;
+}
+div#navigation > ul {
+    margin: 0 auto;
+    padding: 0;
+}
+div#navigation > ul > li > a {
+
+}
+div#navigation > ul > li:hover {
+    background-color: #222;
+    cursor:pointer;
+}
+div#content {
+    float:right;
+    width: calc(100% - 18em);
+    height: calc(100% - 2em);
+    padding-left: 3em;
+    overflow-y: auto;
+}
+div#leftbar {
+    float:left;
+}
